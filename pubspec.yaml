@@ -1,0 +1,198 @@
+name: HUFSHindiAssistant
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+
+  url_launcher: ^5.4.0
+  flutter:
+    sdk: flutter
+  share: ^0.6.5+4
+  excel: ^1.1.5
+  auto_size_text: ^2.1.0
+  flutter_slidable:
+  swipedetector: 1.2.0
+  animated_widgets: ^1.0.6
+  page_turn: ^1.0.1
+  dotted_line: ^2.0.2
+  introduction_screen: ^1.0.7
+  shared_preferences: ^0.5.3+4
+  percent_indicator: ^2.1.7+2
+
+
+
+  #앱 아이콘, 이름 의존성 설정
+  flutter_launcher_icons: ^0.7.3
+  flutter_launcher_name: ^0.0.1
+
+
+  cupertino_icons: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+#앱 아이콘 설정
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/title_icon.png"
+
+#앱 이름 설정
+flutter_launcher_name:
+  name: "HUFS 힌디어 학습 도우미"
+
+flutter:
+  assets:
+    - pictures/indiaflag.jpg
+    - pictures/splash_logo.jpg
+    - pictures/cfl_logo.png
+
+    #A0 엑셀 파일 리스트(A0는 양이 적어 나누지 않음)
+    - assets/A0.xlsx
+
+    #A1 엑셀 파일 리스트
+    - assets/A1_1.xlsx
+    - assets/A1_2.xlsx
+    - assets/A1_3.xlsx
+    - assets/A1_4.xlsx
+    - assets/A1_5.xlsx
+    - assets/A1_6.xlsx
+    - assets/A1_7.xlsx
+    - assets/A1_8.xlsx
+    #A2 엑셀 파일 리스트
+    - assets/A2_1.xlsx
+    - assets/A2_2.xlsx
+    - assets/A2_3.xlsx
+    - assets/A2_4.xlsx
+    - assets/A2_5.xlsx
+    - assets/A2_6.xlsx
+    - assets/A2_7.xlsx
+    - assets/A2_8.xlsx
+    - assets/A2_9.xlsx
+    - assets/A2_10.xlsx
+    #B1 엑셀 파일 리스트
+    - assets/B1_1.xlsx
+    - assets/B1_2.xlsx
+    - assets/B1_3.xlsx
+    - assets/B1_4.xlsx
+    - assets/B1_5.xlsx
+    - assets/B1_6.xlsx
+    - assets/B1_7.xlsx
+    - assets/B1_8.xlsx
+    - assets/B1_9.xlsx
+    - assets/B1_10.xlsx
+    - assets/B1_11.xlsx
+    - assets/B1_12.xlsx
+    - assets/B1_13.xlsx
+
+    #초급 문법 엑셀 파일 리스트
+    - assets/elementary_hindi_book(1~3).xlsx
+    - assets/elementary_hindi_book(4~5).xlsx
+    - assets/elementary_hindi_book(6~8).xlsx
+    - assets/elementary_hindi_book(9~10).xlsx
+    - assets/elementary_hindi_book(11~14).xlsx
+    - assets/elementary_hindi_book(15~19).xlsx
+    - assets/elementary_hindi_book(20~21).xlsx
+    - assets/elementary_hindi_book(22~24).xlsx
+
+    #중급 문법 엑셀 파일 리스트
+    - assets/middle_hindi_book(1~4).xlsx
+    - assets/middle_hindi_book(5~15).xlsx
+    - assets/middle_hindi_book(16~24).xlsx
+    - assets/middle_hindi_book(25~33).xlsx
+    - assets/middle_hindi_book(34~43).xlsx
+    - assets/middle_hindi_book(44~49).xlsx
+
+    #초기 기능 설명
+    - pictures/introduction/delete_my_word.jpg
+    - pictures/introduction/list_form_word_example.jpg
+    - pictures/introduction/back_ban.jpg
+    - pictures/introduction/list_form_word_hide_korean.jpg
+    - pictures/introduction/list_form_word_save.jpg
+    - pictures/introduction/my_voca_and_my_sentence.jpg
+    - pictures/introduction/one_by_one_word.jpg
+    - pictures/introduction/sentence_test.jpg
+    - pictures/introduction/voca_test_hindi.jpg
+    - pictures/introduction/voca_test_korean.jpg
+    - pictures/introduction/wrong_words_result.jpg
+    - pictures/introduction/main.jpg
+
+
+
+    #etc 사진
+
+    - pictures/etc/title_share_icon.png
+
+
+    #학과 단어 아이콘 모음
+
+    - pictures/etc/elementary_hindi_reading.jpg
+    - pictures/etc/elementary_hindi_grammar.jpg
+    - pictures/etc/middle_hindi_reading.jpg
+    - pictures/etc/middle_hindi_grammar.jpg
+
+
+    #학과 단어, 힌디 단어장 메인 화면 베너
+    - pictures/etc/level_banner.jpg
+    - pictures/etc/sentence_banner.jpg
+
+    #CFLPT 단계별 로고
+    - pictures/CFLPT_Logo/CFLPT_A0.jpg
+    - pictures/CFLPT_Logo/CFLPT_A1.jpg
+    - pictures/CFLPT_Logo/CFLPT_A2.jpg
+    - pictures/CFLPT_Logo/CFLPT_B1.jpg
+    - pictures/CFLPT_Logo/CFLPT_B2.jpg
+    - pictures/CFLPT_Logo/CFLPT_C1.jpg
+    - pictures/CFLPT_Logo/CFLPT_C2.jpg
+
+    #CFLPT 단계별 문장 로고
+    - pictures/CFLPT_Logo/CFLPT_A0_Sentence.png
+    - pictures/CFLPT_Logo/CFLPT_A1_Sentence.png
+    - pictures/CFLPT_Logo/CFLPT_A2_Sentence.png
+    - pictures/CFLPT_Logo/CFLPT_B1_Sentence.png
+    - pictures/CFLPT_Logo/CFLPT_B2_Sentence.png
+    - pictures/CFLPT_Logo/CFLPT_C1_Sentence.png
+    - pictures/CFLPT_Logo/CFLPT_C2_Sentence.png
+
+
+    #단어장 선택 아이콘
+    - pictures/Choice_Voca/List_Voca.jpg
+    - pictures/Choice_Voca/One_by_one_voca.jpg
+    - pictures/Choice_Voca/Test_voca.jpg
+
+
+
+
+  uses-material-design: true
+
+  fonts:
+    - family: hufsfontBold
+      fonts:
+        - asset: fonts/hufsfontB.ttf
+
+    - family: hufsfontLight
+      fonts:
+        - asset: fonts/hufsfontL.ttf
+    - family: hufsfontMedium
+      fonts:
+        - asset: fonts/hufsfontM.ttf
+
