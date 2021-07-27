@@ -176,7 +176,7 @@ class _mainfunction extends State<home> {
 
       Container(
         width: horizontal_size,
-        height: vertical_size * 0.21,
+        height: vertical_size * 0.22,
         child:  Card(
           clipBehavior: Clip.antiAlias,
           child: Column(
@@ -209,7 +209,7 @@ class _mainfunction extends State<home> {
               ),
               Container(
                 width: horizontal_size,
-                height: vertical_size * 0.095,
+                height: vertical_size * 0.105,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -284,7 +284,7 @@ class _mainfunction extends State<home> {
       ),
       Container(
         width: horizontal_size,
-        height: vertical_size * 0.21,
+        height: vertical_size * 0.22,
         child: Card(
           clipBehavior: Clip.antiAlias,
           child: Column(
@@ -315,7 +315,7 @@ class _mainfunction extends State<home> {
               ),
               Container(
                 width: horizontal_size,
-                height: vertical_size * 0.095,
+                height: vertical_size * 0.105,
                 child: Row(
 
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -379,7 +379,7 @@ class _mainfunction extends State<home> {
       ),
       Container(
         width: horizontal_size,
-        height: vertical_size * 0.21,
+        height: vertical_size * 0.23,
         child: Card(
           clipBehavior: Clip.antiAlias,
           child: Column(
@@ -405,7 +405,7 @@ class _mainfunction extends State<home> {
                 ),
               ),
               SizedBox(
-                height: vertical_size*0.02,
+                height: vertical_size*0.035,
                 width: horizontal_size,
               ),
               Container(
@@ -463,7 +463,7 @@ class _mainfunction extends State<home> {
       ),
       Container(
         width: horizontal_size,
-        height: vertical_size * 0.33,
+        height: vertical_size * 0.37,
         child: Card(
           clipBehavior: Clip.antiAlias,
           child: Column(
