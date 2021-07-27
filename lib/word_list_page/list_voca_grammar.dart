@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:HUFSHindiAssistant/word_list_page/words.dart';
 import 'dart:async';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:HUFSHindiAssistant/function/unmemory_list.dart';
 import 'package:HUFSHindiAssistant/function/pageroute.dart';
@@ -109,6 +110,8 @@ class _word_list_vocaState_grammar extends State<word_list_voca_grammar> {
   @override
   Widget build(BuildContext context) {
 
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
     // TODO: implement build
     return WillPopScope(

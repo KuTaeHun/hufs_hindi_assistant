@@ -39,6 +39,9 @@ class _onboardingpageState extends State<onboardingpage> {
       SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.transparent),
     );
 
+     //가로 화면 변경 방지
+     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+
     return WillPopScope(
       child: MaterialApp(
         title: 'Introduction screen',

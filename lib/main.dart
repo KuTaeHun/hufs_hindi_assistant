@@ -63,7 +63,10 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    //SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+
     makeInstance();
     if(this.show_one_time==false)
     {

@@ -12,6 +12,7 @@ import 'package:HUFSHindiAssistant/function/pageroute.dart';
 import 'package:HUFSHindiAssistant/function/test_result_page.dart';
 
 import 'package:HUFSHindiAssistant/word_list_page/Test_voca.dart';
+import 'package:flutter/services.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -30,6 +31,9 @@ class _mySentenceState extends State<mySentence> {
 
   @override
   Widget build(BuildContext context) {
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return sentence();
   }
 }

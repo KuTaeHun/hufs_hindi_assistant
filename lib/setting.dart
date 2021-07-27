@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:HUFSHindiAssistant/main.dart';
+import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:HUFSHindiAssistant/introductionScreen.dart';
@@ -8,6 +9,9 @@ import 'package:HUFSHindiAssistant/introductionScreen.dart';
 class setting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     final RenderBox box = context.findRenderObject();
     return Scaffold(
       body: ListView(

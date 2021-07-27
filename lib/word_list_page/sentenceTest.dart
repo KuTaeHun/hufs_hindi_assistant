@@ -16,6 +16,7 @@ import 'package:flutter/material.dart';
 import 'package:dotted_line/dotted_line.dart';
 
 import 'package:HUFSHindiAssistant/function/test_result_sentence_page.dart';
+import 'package:flutter/services.dart';
 
 class sentenceTest extends StatefulWidget {
   //단어 레벨 타이틀
@@ -103,6 +104,9 @@ class _sentenceTestState extends State<sentenceTest> {
 
   @override
   Widget build(BuildContext context) {
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return sentence(this._start_word_num, this._finish_word_num, this.page_name,
         this.file_name);
   }
@@ -268,6 +272,9 @@ class _sentenceState extends State<sentence> {
 
   @override
   Widget build(BuildContext context) {
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return WillPopScope(
         child: new FutureBuilder(
           builder: (BuildContext context, AsyncSnapshot snapshot) {

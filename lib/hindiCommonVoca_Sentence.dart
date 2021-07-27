@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:HUFSHindiAssistant/clfpt_wordlist/CFLPT_chapter_list.dart';
 
 import 'package:HUFSHindiAssistant/clfpt_wordlist/word_list_view_sentence.dart';
+import 'package:flutter/services.dart';
 
 
 class hindiCommonVocaSentence extends StatelessWidget {
@@ -32,6 +33,9 @@ class hindiCommonVocaSentence extends StatelessWidget {
 
 
   Widget build(BuildContext context) {
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     //화면별 넓이 비율 자동 조절 변수
     var horizontal_size = MediaQuery.of(context).size.width-MediaQuery.of(context).padding.left
         -MediaQuery.of(context).padding.right;

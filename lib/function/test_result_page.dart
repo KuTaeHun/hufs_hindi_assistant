@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:HUFSHindiAssistant/function/pageroute.dart';
+import 'package:flutter/services.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -173,6 +174,9 @@ class _test_resultState extends State<test_result> {
   @override
   Widget build(BuildContext context) {
 
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
     return WillPopScope(
         child: SafeArea(
@@ -455,6 +459,8 @@ class _mySentence_resultState extends State<mySentence_result> {
   Widget build(BuildContext context) {
 
 
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return WillPopScope(
         child: SafeArea(
           child: Scaffold(

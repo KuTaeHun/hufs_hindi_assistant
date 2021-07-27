@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:flutter/services.dart';
 
 import 'package:flutter_slidable/flutter_slidable.dart';
 
@@ -255,6 +256,9 @@ class _myVocaState extends State<myVoca> {
 
   @override
   Widget build(BuildContext context) {
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return WillPopScope(child: Builder(builder: (BuildContext context) {
       return SafeArea(
           child: Scaffold(

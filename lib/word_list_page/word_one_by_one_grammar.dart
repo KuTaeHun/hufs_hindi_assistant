@@ -12,6 +12,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:HUFSHindiAssistant/clfpt_wordlist/CFLPT_chapter_list.dart';
 import 'package:HUFSHindiAssistant/function/finish_alert_function.dart';
 import 'package:HUFSHindiAssistant/function/unmemory_list.dart';
+import 'package:flutter/services.dart';
 
 class word_one_by_one_view_grammar extends StatefulWidget {
 
@@ -81,6 +82,9 @@ class _word_one_by_one_view_grammarState extends State<word_one_by_one_view_gram
 
   @override
   Widget build(BuildContext context) {
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return Scaffold(
       body: Container(
         child: AnimatedFlipCard(
@@ -206,6 +210,9 @@ class _AnimatedFlipCardState extends State<AnimatedFlipCard>
   @override
   Widget build(BuildContext context) {
 
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return WillPopScope(
         child: new FutureBuilder(
             future:
@@ -450,6 +457,9 @@ class CustomCard_Front extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     var horizontal_size = MediaQuery.of(context).size.width -
         MediaQuery.of(context).padding.left -
         MediaQuery.of(context).padding.right;
@@ -532,6 +542,9 @@ class CustomCard_Behind extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     var horizontal_size = MediaQuery.of(context).size.width -
         MediaQuery.of(context).padding.left -
         MediaQuery.of(context).padding.right;

@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:HUFSHindiAssistant/word_list_page/make_infinite_save.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -560,6 +561,9 @@ class _mainfunction extends State<home> {
   @override
   Widget build(BuildContext context) {
 
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
     return Scaffold(
         body: Container(

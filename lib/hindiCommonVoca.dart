@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:HUFSHindiAssistant/clfpt_wordlist/CFLPT_chapter_list.dart';
 import 'package:HUFSHindiAssistant/clfpt_wordlist/word_list_view.dart';
-
+import 'package:flutter/services.dart';
 class hindiCommonVoca extends StatelessWidget {
   @override
   final List<Map> major_icon_images = [
@@ -31,6 +31,9 @@ class hindiCommonVoca extends StatelessWidget {
   ]; // B2는 아직 안 만들어졌음
 
   Widget build(BuildContext context) {
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     //화면별 넓이 비율 자동 조절 변수
     var horizontal_size = MediaQuery.of(context).size.width-MediaQuery.of(context).padding.left
         -MediaQuery.of(context).padding.right;

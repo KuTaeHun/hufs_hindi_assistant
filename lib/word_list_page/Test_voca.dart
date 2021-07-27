@@ -17,6 +17,7 @@ import 'dart:math';
 import 'package:HUFSHindiAssistant/function/pageroute.dart';
 
 import 'package:HUFSHindiAssistant/function/unmemory_list.dart';
+import 'package:flutter/services.dart';
 
 class TestVoca extends StatefulWidget {
   //단어 레벨 타이틀
@@ -433,6 +434,9 @@ class _TestVocaState extends State<TestVoca>
 
   @override
   Widget build(BuildContext context) {
+
+    //가로 화면 변경 방지
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return WillPopScope(
         child: new FutureBuilder(
             future: make_word_list(
