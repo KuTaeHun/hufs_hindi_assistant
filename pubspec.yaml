@@ -123,18 +123,15 @@ flutter:
     - assets/middle_hindi_book(44~49).xlsx
 
     #초기 기능 설명
-    - pictures/introduction/delete_my_word.jpg
-    - pictures/introduction/list_form_word_example.jpg
-    - pictures/introduction/back_ban.jpg
-    - pictures/introduction/list_form_word_hide_korean.jpg
-    - pictures/introduction/list_form_word_save.jpg
-    - pictures/introduction/my_voca_and_my_sentence.jpg
-    - pictures/introduction/one_by_one_word.jpg
-    - pictures/introduction/sentence_test.jpg
-    - pictures/introduction/voca_test_hindi.jpg
-    - pictures/introduction/voca_test_korean.jpg
-    - pictures/introduction/wrong_words_result.jpg
-    - pictures/introduction/main.jpg
+    - pictures/introduction/card.png
+    - pictures/introduction/card_save.png
+    - pictures/introduction/listvoca.png
+    - pictures/introduction/listvoca_save.png
+    - pictures/introduction/main.png
+    - pictures/introduction/myword.png
+    - pictures/introduction/resultpage.png
+    - pictures/introduction/sentencetest.png
+    - pictures/introduction/wordtest.png
 
 
 

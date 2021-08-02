@@ -141,65 +141,53 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               _buildImage('introduction/main', horizontal_size, vertical_size),
           decoration: pageDecoration,
         ),
-        PageViewModel(
-          title: "뒤로가기 기능 제한",
-          body:
-              "안드로이드 사용자분들은 단어 학습, 문장 학습 도중 뒤로가기 버튼을 사용할 수 없습니다. 제목 옆에 있는 뒤로가기 버튼을 사용해 주세요.",
-          image: _buildImage(
-              'introduction/back_ban', horizontal_size, vertical_size),
-          decoration: pageDecoration,
-        ),
+
         PageViewModel(
           title: "나의 단어, 문장 복습",
           body:
               "단어 학습 후 잘 안 외워진 단어를 여기서 복습할 수 있습니다. 메인 메뉴에서 오른쪽으로 스와이프하면 나만의 단어장, 문장 기능을 확인할 수 있습니다.",
-          image: _buildImage('introduction/my_voca_and_my_sentence',
+          image: _buildImage('introduction/myword',
               horizontal_size, vertical_size),
           decoration: pageDecoration,
         ),
         PageViewModel(
-          title: "나의 단어 삭제하기",
-          body: "오른쪽으로 스와이프하면 단어 삭제 버튼이 등장합니다.\n복습 후 암기된 단어를 삭제합니다.",
+          title: "단어장 방식 암기하기",
+          body:
+          "기존 단어장 형식으로 단어를 암기할 수 있습니다.\n 해당 단어를 클릭하면 관련 예제 문장을 볼 수 있습니다.",
           image: _buildImage(
-              'introduction/delete_my_word', horizontal_size, vertical_size),
+              'introduction/listvoca', horizontal_size, vertical_size),
           decoration: pageDecoration,
         ),
         PageViewModel(
-          title: "힌디 단어 외우기",
-          body: "해당 단어를 클릭하면 관련된 예시 문장을 확인할 수 있습니다.",
-          image: _buildImage('introduction/list_form_word_example',
-              horizontal_size, vertical_size),
+          title: "나의 단어 저장하기",
+          body: "오른쪽으로 스와이프하면 단어 저장 버튼이 등장합니다.\n복습 후 암기된 단어를 저장합니다.",
+          image: _buildImage(
+              'introduction/listvoca_save', horizontal_size, vertical_size),
           decoration: pageDecoration,
         ),
-        PageViewModel(
-          title: "단어장에서 힌디어 숨기기",
-          body:
-              "의미 가림을 클릭시 힌디어 단어가 사라집니다.\n단어 가림을 클릭시 한국어 단어가 사라집니다. 다시 누르면 재등장합니다.",
-          image: _buildImage('introduction/list_form_word_hide_korean',
-              horizontal_size, vertical_size),
-          decoration: pageDecoration,
-        ),
-        PageViewModel(
-          title: "단어 저장하기",
-          body:
-              "해당 단어를 오른쪽으로 스와이프하면 단어 저장 버튼이 등장합니다.\n저장된 단어들은 나만의 단어장에서 확인할 수 있습니다.",
-          image: _buildImage('introduction/list_form_word_save',
-              horizontal_size, vertical_size),
-          decoration: pageDecoration,
-        ),
+
+
         PageViewModel(
           title: "카드 형식 단어장",
-          body: "카드를 터치하면 뜻과 예시 문장이 등장합니다.\n아래에서 위로 스와이프하면 나만의 단어가 저장됩니다.",
+          body: "해당 카드를 터치하면 뜻과 예시 문장이 등장합니다.\n 문장 학습은 카드 암기 방식이 존재하지 않습니다.",
           image: _buildImage(
-              'introduction/one_by_one_word', horizontal_size, vertical_size),
+              'introduction/card', horizontal_size, vertical_size),
+          decoration: pageDecoration,
+        ),
+        PageViewModel(
+          title: "카드 형식 단어장 저장",
+          body:
+          "카드를 아래에서 위로 스와이프하면 해당 단어를 저장합니다.\n 카드 뒷면(한국어 의미, 예제)에서는 단어가 저장되지 않습니다.",
+          image: _buildImage(
+              'introduction/card_save', horizontal_size, vertical_size),
           decoration: pageDecoration,
         ),
         PageViewModel(
           title: "문장 학습",
           body:
-              "해석이 맞으면 O를 선택하세요!\n틀린 문장은 자동으로 나의 문장 학습에 저장됩니다. 힌트는 핵심 단어를 보여줍니다.",
+              "O,X 퀴즈 형식입니다. 해석이 맞으면 O를 선택하세요!\n틀린 문장은 자동으로 나의 문장 학습에 저장됩니다. 힌트는 문제의 핵심 단어를 보여줍니다.",
           image: _buildImage(
-              'introduction/sentence_test', horizontal_size, vertical_size),
+              'introduction/sentencetest', horizontal_size, vertical_size),
           decoration: pageDecoration,
         ),
         PageViewModel(
@@ -207,13 +195,13 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           body:
               "정답을 선택하세요!\n틀린 단어는 자동으로 나의 단어 학습에 저장됩니다. 한국어 문제 버튼을 누르면 문제와 예시가 바뀝니다.",
           image: _buildImage(
-              'introduction/voca_test_hindi', horizontal_size, vertical_size),
+              'introduction/wordtest', horizontal_size, vertical_size),
           decoration: pageDecoration,
         ),
         PageViewModel(
           title: "시험 결과",
           body: "해당 단원 단어 테스트, 문장 학습이 완료되면 점수와 틀린 단어를 볼 수 있습니다.",
-          image: _buildImage('introduction/wrong_words_result', horizontal_size,
+          image: _buildImage('introduction/resultpage', horizontal_size,
               vertical_size),
           decoration: pageDecoration,
         ),
