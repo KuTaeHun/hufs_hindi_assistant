@@ -92,7 +92,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
   Widget _buildImage(String assetName, var horizontal_size, var vertical_size) {
     return Align(
       child: Image.asset(
-        'pictures/$assetName.jpg',
+        'pictures/$assetName.png',
         height: vertical_size * 0.45,
         width: horizontal_size,
       ),
