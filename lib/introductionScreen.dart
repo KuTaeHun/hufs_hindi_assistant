@@ -53,10 +53,10 @@ class _onboardingpageState extends State<onboardingpage> {
           context: context,
           builder: (context) =>
                AlertDialog(title: Text('단어장을 종료할까요?'), actions: <Widget>[
-                RaisedButton(
+                 ElevatedButton(
                     child: Text('아니오'),
                     onPressed: () => Navigator.of(context).pop(false)),
-                RaisedButton(child: Text('예'), onPressed: () => exit(0)),
+                 ElevatedButton(child: Text('예'), onPressed: () => exit(0)),
               ])),
     );
   }

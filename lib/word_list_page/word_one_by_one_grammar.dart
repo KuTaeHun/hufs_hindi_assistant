@@ -279,7 +279,7 @@ class _AnimatedFlipCardState extends State<AnimatedFlipCard>
                           onPressed: () {},
                         ),
                       );
-                      Scaffold.of(context).showSnackBar(snackbar);
+                      ScaffoldMessenger.of(context).showSnackBar(snackbar);
                     }
                   });
                 }

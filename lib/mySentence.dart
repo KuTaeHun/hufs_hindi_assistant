@@ -564,7 +564,7 @@ class _sentenceState extends State<sentence> {
                                 height: vertical_size * 0.1,
                                 padding: EdgeInsets.symmetric(
                                     horizontal: horizontal_size * 0.02),
-                                child: OutlineButton(
+                                child: OutlinedButton(
                                   onPressed: () {
                                     setState(() {
                                       hint_color = Colors.black;
@@ -572,7 +572,7 @@ class _sentenceState extends State<sentence> {
 
                                     //HintDialog(context,hindi_word,korean_word);
                                   },
-                                  hoverColor: Colors.black12,
+
                                   child: const AutoSizeText(
                                     "힌트",
                                     style: TextStyle(

@@ -28,13 +28,13 @@ void alert_backto_lobi(BuildContext context, String file_name) async {
             ),
           ),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               onPressed: () {
                 alert_backto_list(context);
               },
               child:const  Text("아니오"),
             ),
-            FlatButton(
+            TextButton(
                 onPressed: () {
                   if (file_name == 'assets/A0.xlsx') {
                     Navigator.pushAndRemoveUntil(
@@ -119,13 +119,13 @@ void alert_backto_list(BuildContext context) async {
             ),
           ),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               onPressed: () {
                 Navigator.pop(context);
               },
               child:const Text("아니오"),
             ),
-            FlatButton(
+            TextButton(
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(
                       context,

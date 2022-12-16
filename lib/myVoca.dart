@@ -552,7 +552,7 @@ class _myVocaState extends State<myVoca> {
                                 ),
                                 actionPane: const SlidableDrawerActionPane(),
                                 actionExtentRatio: 0.2,
-                                actions: <Widget>[
+                                children: <Widget>[
                                   IconSlideAction(
                                     caption: "삭제",
                                     color: Colors.redAccent,

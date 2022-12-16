@@ -121,7 +121,7 @@ void alert(BuildContext context, String info_title, String info_text,
             ),
           ),
           actions: [
-            FlatButton(
+            TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },

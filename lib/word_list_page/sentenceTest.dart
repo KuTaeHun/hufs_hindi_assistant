@@ -589,7 +589,7 @@ class _sentenceState extends State<sentence> {
                                       height: vertical_size * 0.1,
                                       padding: EdgeInsets.symmetric(
                                           horizontal: horizontal_size * 0.02),
-                                      child: OutlineButton(
+                                      child: OutlinedButton(
                                         onPressed: () {
                                           setState(() {
                                             hint_color = Colors.black;
@@ -597,7 +597,7 @@ class _sentenceState extends State<sentence> {
 
                                           //HintDialog(context,hindi_word,korean_word);
                                         },
-                                        hoverColor: Colors.black12,
+
                                         child: AutoSizeText(
                                           "힌트",
                                           style: TextStyle(
@@ -793,7 +793,7 @@ class _sentenceState extends State<sentence> {
   HintDialog(BuildContext context, String hindi_word, String korea_word) {
     // set up the button
 
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("확인"),
       onPressed: () {
         Navigator.of(context).pop();

@@ -325,8 +325,8 @@ class _word_list_vocaState_grammar extends State<word_list_voca_grammar> {
                                             onPressed: () {},
                                           ),
                                         );
-                                        Scaffold.of(context)
-                                            .showSnackBar(snackbar);
+                                        ScaffoldMessenger.of(context).showSnackBar(snackbar);
+
                                       }),
                                     ),
                                   ],

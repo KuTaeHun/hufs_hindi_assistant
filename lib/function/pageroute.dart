@@ -163,10 +163,10 @@ void sen_show_quit_dialog(BuildContext context, String file_name) {
       builder: (context) => AlertDialog(
               title: Text('아직 학습이 진행중입니다. 해당 챕터 목차로 이동할까요?'),
               actions: <Widget>[
-                RaisedButton(
+                ElevatedButton(
                     child: Text('아니오'),
                     onPressed: () => Navigator.of(context).pop(false)),
-                RaisedButton(
+                ElevatedButton(
                     child: Text('예'),
                     onPressed: () {
                       Sentence_backtoChapterList(
@@ -183,10 +183,10 @@ void show_quit_dialog(BuildContext context, String file_name) {
       builder: (context) => AlertDialog(
               title: Text('아직 시험이 진행중입니다. 해당 챕터 목차로 이동할까요?'),
               actions: <Widget>[
-                RaisedButton(
+                ElevatedButton(
                     child: Text('아니오'),
                     onPressed: () => Navigator.of(context).pop(false)),
-                RaisedButton(
+                ElevatedButton(
                     child: Text('예'),
                     onPressed: () {
                       backtoChapterList(context: context, file_name: file_name);
